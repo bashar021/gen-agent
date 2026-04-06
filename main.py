@@ -1,10 +1,12 @@
 from src.brain import SalesBrain
 from src.voice import VoiceEngine
+from src.brains.ollamaBrain import OllamaBrain
 
-
+# ollama list
 def start_prototype():
     # Initialize our AI components
-    brain = SalesBrain()
+    # brain = SalesBrain()
+    brain = OllamaBrain()
     voice = VoiceEngine()
 
     print("\n--- 🚀 PRIMO SALES AGENT STARTING ---")
